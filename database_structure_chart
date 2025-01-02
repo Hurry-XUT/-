@@ -1,0 +1,45 @@
+digraph Database_System_Structure {
+	A [label="数据库系统"]
+	B [label="图书管理模块"]
+	C [label="学生信息管理模块"]
+	D [label="借阅管理模块"]
+	E [label="超期统计模块"]
+	F [label="统计分析模块"]
+	G [label="用户管理模块"]
+	B1 [label="图书录入"]
+	B2 [label="图书修改"]
+	B3 [label="图书删除"]
+	B4 [label="图书查询"]
+	C1 [label="学生信息录入"]
+	C2 [label="学生信息修改"]
+	C3 [label="学生信息删除"]
+	C4 [label="学生信息查询"]
+	D1 [label="借书操作"]
+	D2 [label="还书操作"]
+	D3 [label="借阅记录管理"]
+	E1 [label="按学院统计"]
+	E2 [label="按学生统计"]
+	F1 [label="库存统计"]
+	G2 [label="日志记录"]
+	A -> B
+	A -> C
+	A -> D
+	A -> E
+	A -> F
+	A -> G
+	B -> B1
+	B -> B2
+	B -> B3
+	B -> B4
+	C -> C1
+	C -> C2
+	C -> C3
+	C -> C4
+	D -> D1
+	D -> D2
+	D -> D3
+	E -> E1
+	E -> E2
+	F -> F1
+	G -> G2
+}

@@ -1,0 +1,46 @@
+digraph ER_Diagram {
+	Books [label=Books color=lightblue shape=rect style=filled]
+	Students [label=Students color=lightblue shape=rect style=filled]
+	BorrowRecords [label=BorrowRecords color=lightblue shape=rect style=filled]
+	color=lightyellow shape=ellipse style=filled
+	BookID [label=BookID]
+	Title [label=Title]
+	Publisher [label=Publisher]
+	Author [label=Author]
+	PublicationDate [label=PublicationDate]
+	LoanPeriod [label=LoanPeriod]
+	Stock [label=Stock]
+	StudentID [label=StudentID]
+	Name [label=Name]
+	Gender [label=Gender]
+	DOB [label=DOB]
+	Major [label=Major]
+	Class [label=Class]
+	Department [label=Department]
+	RecordID [label=RecordID]
+	BorrowDate [label=BorrowDate]
+	DueDate [label=DueDate]
+	ReturnDate [label=ReturnDate]
+	Borrow [label=Borrow color=lightblue shape=diamond style=filled]
+	Books -> BookID
+	Books -> Title
+	Books -> Publisher
+	Books -> Author
+	Books -> PublicationDate
+	Books -> LoanPeriod
+	Books -> Stock
+	Students -> StudentID
+	Students -> Name
+	Students -> Gender
+	Students -> DOB
+	Students -> Major
+	Students -> Class
+	Students -> Department
+	BorrowRecords -> RecordID
+	BorrowRecords -> BorrowDate
+	BorrowRecords -> DueDate
+	BorrowRecords -> ReturnDate
+	Books -> Borrow [label=n]
+	Students -> Borrow [label=n]
+	Borrow -> BorrowRecords [label=1]
+}
